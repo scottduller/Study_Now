@@ -14,12 +14,7 @@ const AddEditArea = ({
 }) => {
   const eventContext = useContext(EventContext);
   const {
-    events,
     current,
-    addEvent,
-    editEvent,
-    deleteEvent,
-    setCurrentEvent,
     clearCurrentEvent,
   } = eventContext;
 
@@ -28,6 +23,7 @@ const AddEditArea = ({
     clearCurrentEvent();
   };
 
+  // eslint-disable-next-line no-unused-vars
   const onAddEvent = () => {
     setIsAdd(true);
     setIsActive(true);

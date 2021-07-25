@@ -1,4 +1,4 @@
-import React, { useState, Fragment, useEffect, useContext } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import moment from "moment";
 import "./CalendarArea.css";
 import AddEditArea from "./AddEditArea";

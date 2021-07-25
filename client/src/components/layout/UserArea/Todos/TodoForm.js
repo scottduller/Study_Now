@@ -1,11 +1,9 @@
-import React, { useContext, useState, useEffect, Fragment } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import TodoContext from "../../../../context/todo/todoContext";
 import DatePicker from "react-datepicker";
 import moment from "moment";
-import SubTodoItem from "./SubTodoItem";
 import "./Todos.css";
 import "react-datepicker/dist/react-datepicker.css";
-import parseISO from "date-fns/parseISO";
 
 // A component that contains all the forms for the currently selected todo
 const TodoForm = ({ isActive, setIsActive }) => {
@@ -76,7 +74,7 @@ const TodoForm = ({ isActive, setIsActive }) => {
         </div>
       );
     }
-    const { name, description, isCompleted, urgent, important, deadline } =
+    const { name, description, urgent, important, deadline } =
       todo;
 
     return (

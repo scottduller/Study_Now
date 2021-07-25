@@ -1,6 +1,5 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
-import Alert from "../Alert";
 import AuthContext from "../../../context/auth/authContext";
 
 import "./NavBar.css";
@@ -16,16 +15,6 @@ const NavBar = () => {
     // eslint-disable-next-line
   }, []);
 
-  // State that contains whether the sidebar is enlarged or not
-  const [state, setState] = useState({
-    isActive: true,
-  });
-
-  // Changes the state of the sidebar
-  const handleClick = () => {
-    setState({ isActive: !state.isActive });
-  };
-
   const onLogout = () => {
     logout();
   };
@@ -34,8 +23,8 @@ const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
-        <Link to="/">
-          <a className="navbar-brand">Study Now</a>
+        <Link className="navbar-brand" to="/">
+          Study Now
         </Link>
         <button
           className="navbar-toggler ml-auto"
@@ -46,13 +35,13 @@ const NavBar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon" style={{ width: "1rem" }}></span>
+          <span className="navbar-toggler-icon" style={{ width: "1rem" }}></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item mr-3">
               <Link to="/dashboard">
-                <div className>
+                <div>
                   <i className="fas fa-home mr-1" />
                   Home
                 </div>

@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import EventContext from "../../../../context/events/eventContext";
 import "react-datepicker/dist/react-datepicker.css";
 import parseISO from "date-fns/parseISO";
@@ -7,12 +7,9 @@ import DatePicker from "react-datepicker";
 const EditArea = ({ setIsAdd, setIsActive }) => {
   const eventContext = useContext(EventContext);
   const {
-    events,
     current,
-    addEvent,
     editEvent,
     deleteEvent,
-    setCurrentEvent,
     clearCurrentEvent,
   } = eventContext;
 

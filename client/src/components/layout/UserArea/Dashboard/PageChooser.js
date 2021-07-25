@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 const PageChooser = () => {
   // Component returns a grid of four cards containing a description of each page of th application and a link
   return (
-    <div className="fluid-container">
+    <>
       <div className="row">
-        <div className="col-xl-6 d-flex align-items-stretch mb-3">
+        <div className="col-xl-6 d-flex align-items-stretch mb-3 p-0 pr-xl-3">
           <div className="card">
             <div className="card-header h3 nowrap ">Calendar</div>
             <div className="card-body">
@@ -21,7 +21,7 @@ const PageChooser = () => {
             </div>
             <div className="card-footer">
               <Link
-                to="/Calendar"
+                to="/calendar"
                 className="btn btn-outline-primary w-100 py-1 px-3"
               >
                 {" "}
@@ -30,7 +30,7 @@ const PageChooser = () => {
             </div>
           </div>
         </div>
-        <div className="col-xl-6 d-flex align-items-stretch mb-3">
+        <div className="col-xl-6 d-flex align-items-stretch mb-3 p-0">
           <div className="card">
             <div className="card-header h3 nowrap">To-do Lists</div>
             <div className="card-body">
@@ -46,7 +46,7 @@ const PageChooser = () => {
             </div>
             <div className="card-footer">
               <Link
-                to="/Todos"
+                to="/todos"
                 className="btn btn-outline-primary w-100 py-1 px-3"
               >
                 {" "}
@@ -55,7 +55,7 @@ const PageChooser = () => {
             </div>
           </div>
         </div>
-        <div className="col-xl-6 d-flex align-items-stretch mb-3">
+        <div className="col-xl-6 d-flex align-items-stretch mb-3 p-0 pr-xl-3">
           <div className="card">
             <div className="card-header h3 nowrap">Pomodoro Timer</div>
             <div className="card-body">
@@ -71,7 +71,7 @@ const PageChooser = () => {
             </div>
             <div className="card-footer">
               <Link
-                to="/PomodoroTimer"
+                to="/pomodoro-timer"
                 className="btn btn-outline-primary w-100 py-1 px-3"
               >
                 {" "}
@@ -80,8 +80,8 @@ const PageChooser = () => {
             </div>
           </div>
         </div>
-        <div className="col-xl-6 d-flex align-items-stretch mb-3">
-          <div className="card">
+        <div className="col-xl-6 d-flex align-items-stretch mb-3 p-0">
+          <div className="card ">
             <div className="card-header h3 nowrap">Flashcards</div>
             <div className="card-body">
               <h5 className="card-subtitle mb-2">
@@ -96,7 +96,7 @@ const PageChooser = () => {
             </div>
             <div className="card-footer">
               <Link
-                to="/Flashcards"
+                to="/flashcards"
                 className="btn btn-outline-primary w-100 py-1 px-3"
               >
                 {" "}
@@ -106,7 +106,7 @@ const PageChooser = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

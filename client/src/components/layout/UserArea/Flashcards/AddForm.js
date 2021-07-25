@@ -4,16 +4,8 @@ import FlashcardsContext from "../../../../context/flashcards/flashcardsContext"
 const AddForm = ({ setIsActive }) => {
   const flashcardsContext = useContext(FlashcardsContext);
   const {
-    flashcards,
-    current,
-    filtered,
     addFlashcard,
-    updateFlashcard,
-    deleteFlashcard,
-    setCurrentFlashcard,
     clearCurrentFlashcard,
-    filterFlashcards,
-    clearFilterFlashcards,
   } = flashcardsContext;
 
   const [form, setForm] = useState({

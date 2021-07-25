@@ -8,16 +8,9 @@ const TaskView = () => {
   const {
     todos,
     addTodo,
-    filtered,
-    filterTodos,
     clearFilter,
-    prioritySort,
-    deadlineSort,
-    alphabeticalSort,
-    subTodos,
     loading: todoLoading,
     getTodos,
-    getSubTodos,
   } = todoContext;
 
   useEffect(() => {
@@ -99,7 +92,7 @@ const TaskView = () => {
 
   return (
     <>
-      <div className="addTodo input-group p-0 mb-2">
+      <div className="addTodo input-group p-0 mb-4">
         <input
           placeholder="Add New Quick Task"
           type="text"

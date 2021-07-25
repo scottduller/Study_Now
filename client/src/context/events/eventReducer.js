@@ -9,6 +9,7 @@ import {
 } from "../types";
 
 export default (state, action) => {
+  // eslint-disable-next-line default-case
   switch (action.type) {
     case GET_EVENTS:
       return {

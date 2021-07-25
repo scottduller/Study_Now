@@ -1,5 +1,4 @@
 import React, { useState, useContext, useEffect } from "react";
-import cloneDeep from "lodash/cloneDeep";
 import FlashcardsContext from "../../../../context/flashcards/flashcardsContext";
 import moment from "moment";
 

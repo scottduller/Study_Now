@@ -1,16 +1,10 @@
-import React, { useState, useContext, Fragment, useEffect } from "react";
+import React, { useState } from "react";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import moment from "moment";
-import PomodoroContext from "../../../../context/pomodoroTimer/pomodoroContext";
-import {
-  GET_POMODORO_SETTINGS,
-  ADD_POMODORO_SETTINGS,
-  UPDATE_POMODORO_SETTINGS,
-  POMODORO_ERROR,
-} from "../../../../context/types";
 
 // Component that renders a todo timer and its settings
 const PomodoroTimer = () => {
+  // eslint-disable-next-line no-unused-vars
   const [defaultSettings, setDefaultSettings] = useState({
     pomodoroTime: 25,
     breakTime: 5,
@@ -101,7 +95,7 @@ const PomodoroTimer = () => {
 
   // Renders the countdown timer tex in the middle of the timer
   const renderTime = (value) => {
-    if (isBreak && sessionNo == 3) {
+    if (isBreak && sessionNo === 3) {
       return (
         <div className="messageWrapper">
           <div className="message">Long Break</div>
@@ -139,7 +133,7 @@ const PomodoroTimer = () => {
     <>
       <div className="d-block m-auto">
         <div
-          className="btn btn-light btn-lg position-relative settingsBtn"
+          className="btn btn-lg position-relative settingsBtn"
           onClick={() => setIsActive(!isActive)}
         >
           <i className="fas fa-cog" />

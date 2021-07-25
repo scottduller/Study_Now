@@ -1,25 +1,19 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import FlashcardsContext from "../../../../context/flashcards/flashcardsContext";
 
 const EditForm = ({ setIsActive }) => {
   const flashcardsContext = useContext(FlashcardsContext);
   const {
-    flashcards,
     getFlashcards,
     current,
-    filtered,
-    addFlashcard,
     updateFlashcard,
     deleteFlashcard,
-    setCurrentFlashcard,
     clearCurrentFlashcard,
-    filterFlashcards,
-    clearFilterFlashcards,
   } = flashcardsContext;
 
   const [form, setForm] = useState(current);
 
-  const { title, front, back, isActive } = form;
+  const { title, front, back } = form;
 
   const formChange = (e) => {
     setForm({ ...form, [e.target.id]: e.target.value });

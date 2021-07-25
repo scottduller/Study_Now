@@ -5,13 +5,7 @@ import EventContext from "../../../../context/events/eventContext";
 const EventsViewItem = ({ event }) => {
   const eventContext = useContext(EventContext);
   const {
-    events,
-    current,
-    addEvent,
-    editEvent,
-    deleteEvent,
     setCurrentEvent,
-    clearCurrentEvent,
   } = eventContext;
 
   return (

@@ -8,6 +8,7 @@ const SubTodoItem = ({ subTodo }) => {
   // Refreshes the sub todos from context
   useEffect(() => {
     setNewSubTodo(subTodo);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const [newSubTodo, setNewSubTodo] = useState(subTodo);

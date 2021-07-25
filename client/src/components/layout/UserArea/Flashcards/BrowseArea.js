@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect, Fragment } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import FlashcardsContext from "../../../../context/flashcards/flashcardsContext";
 import FlashcardItem from "./FlashcardItem";
 
@@ -7,14 +7,9 @@ const BrowseArea = ({ setIsActive, setIsStudy }) => {
   const {
     flashcards,
     loading,
-    current,
     filtered,
     getFlashcards,
-    addFlashcard,
-    updateFlashcard,
-    deleteFlashcard,
     setCurrentFlashcard,
-    clearCurrentFlashcard,
     filterFlashcards,
     clearFilterFlashcards,
   } = flashcardsContext;

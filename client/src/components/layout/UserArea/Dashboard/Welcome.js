@@ -1,10 +1,7 @@
-import React, { useContext, useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect } from "react";
 
 import TaskView from "./TaskView";
-import EventView from "./EventView";
 
-import TodoContext from "../../../../context/todo/todoContext";
-import EventContext from "../../../../context/events/eventContext";
 import AuthContext from "../../../../context/auth/authContext";
 import PageChooser from "./PageChooser";
 
@@ -15,11 +12,7 @@ const Welcome = () => {
   const userContext = useContext(AuthContext);
 
   const {
-    register,
     loadUser,
-    login,
-    logout,
-    clearErrors,
     user,
     loading: userLoading,
   } = userContext;
@@ -30,11 +23,11 @@ const Welcome = () => {
 
 
   return (
-    <div className="container-fluid  h-100">
+    <div className="container-fluid px-4 h-100">
       {!userLoading && user !== null ? (
-        <div className="d-flex h-100 py-5 flex-column ">
+        <div className="d-flex py-5 flex-column ">
           <div
-            className="card shadow mb-5 mx-auto"
+            className="card shadow mb-3 p-2 mx-auto mx-lg-0 mr-lg-auto"
             style={{ borderRadius: "15px" }}
           >
             <div className="card-body py-1 px-3">
@@ -46,15 +39,15 @@ const Welcome = () => {
           <div className="d-flex flex-row w-100 h-100 align-items-stretch justify-content-center">
 
             <div
-              className="card taskView flex-shrink-0 shadow mr-lg-4"
+              className="d-none d-lg-block card taskView flex-shrink-0 shadow mr-lg-4"
               style={{ borderRadius: "15px" }}
             >
-              <div className="card-body p-4">
+              <div className=" card-body p-4">
                 <TaskView />
               </div>
             </div>
 
-            <div className="d-none d-lg-block flex-shrink-1 w-50">
+            <div className="flex-shrink-1 choose">
               <PageChooser />
             </div>
 

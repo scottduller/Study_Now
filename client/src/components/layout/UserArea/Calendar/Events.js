@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, Fragment } from "react";
+import React, { useContext } from "react";
 import EventItem from "./EventItem";
 import EventContext from "../../../../context/events/eventContext";
 import TodoContext from "../../../../context/todo/todoContext";

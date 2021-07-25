@@ -1,5 +1,4 @@
 import React, { useEffect, useContext } from "react";
-import NavBar from "../../layout/UserArea/NavBar";
 import CalendarArea from "../../layout/UserArea/Calendar/CalendarArea";
 import TodoContext from "../../../context/todo/todoContext";
 
@@ -8,7 +7,7 @@ import TodoContext from "../../../context/todo/todoContext";
 
 const Calendar = () => {
   const todoContext = useContext(TodoContext);
-  const { todos, getTodos } = todoContext;
+  const { getTodos } = todoContext;
 
   useEffect(() => {
     getTodos();

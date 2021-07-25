@@ -6,16 +6,7 @@ import EditForm from "./EditForm";
 const AddEditArea = ({ isActive, setIsActive }) => {
   const flashcardsContext = useContext(FlashcardsContext);
   const {
-    flashcards,
     current,
-    filtered,
-    addFlashcard,
-    updateFlashcard,
-    deleteFlashcard,
-    setCurrentFlashcard,
-    clearCurrentFlashcard,
-    filterFlashcards,
-    clearFilterFlashcards,
   } = flashcardsContext;
 
   return (

@@ -3,7 +3,7 @@ import TodoContext from "../../../../context/todo/todoContext";
 
 const TaskItem = ({ todo }) => {
   const todoContext = useContext(TodoContext);
-  const { updateTodo, subTodos, setCurrent, addSubTodo, getSubTodos } =
+  const { updateTodo } =
     todoContext;
 
   const { _id, name, isCompleted, urgent, important } = todo;

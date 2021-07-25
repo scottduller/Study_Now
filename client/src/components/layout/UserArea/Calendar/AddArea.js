@@ -1,6 +1,5 @@
 import React, { useState, useContext } from "react";
 import EventContext from "../../../../context/events/eventContext";
-import AlertContext from "../../../../context/alert/alertContext";
 import "react-datepicker/dist/react-datepicker.css";
 import parseISO from "date-fns/parseISO";
 import DatePicker from "react-datepicker";
@@ -8,17 +7,9 @@ import DatePicker from "react-datepicker";
 const AddArea = ({ setIsAdd, setIsActive, date }) => {
   const eventContext = useContext(EventContext);
   const {
-    events,
-    current,
     addEvent,
-    editEvent,
-    deleteEvent,
-    setCurrentEvent,
     clearCurrentEvent,
   } = eventContext;
-
-  const alertContext = useContext(AlertContext);
-  const { setAlert } = alertContext;
 
   const [form, setForm] = useState({
     start: new Date(),

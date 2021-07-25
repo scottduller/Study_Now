@@ -6,12 +6,6 @@ const EventsView = ({ date }) => {
   const eventContext = useContext(EventContext);
   const {
     events,
-    current,
-    addEvent,
-    editEvent,
-    deleteEvent,
-    setCurrentEvent,
-    clearCurrentEvent,
   } = eventContext;
 
   const currentEventsFilter = () => {
