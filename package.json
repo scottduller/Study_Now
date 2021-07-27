@@ -20,6 +20,7 @@
     "@material-ui/icons": "^4.5.1",
     "bcryptjs": "^2.4.3",
     "config": "^3.2.3",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-validator": "^6.2.0",
     "jsonwebtoken": "^8.5.1",
@@ -28,7 +29,6 @@
   },
   "devDependencies": {
     "concurrently": "^5.0.0",
-    "nodemon": "^1.19.4",
     "eslint": "^6.6.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.3.0",
@@ -39,6 +39,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
+    "nodemon": "^1.19.4",
     "prettier": "^2.3.1",
     "pretty-quick": "^3.1.1"
   },
