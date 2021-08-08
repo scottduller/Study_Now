@@ -19,7 +19,7 @@ import SignUp from './components/pages/LandingArea/SignUp';
 
 import './App.css';
 
-require('./utils/keepAlive')();
+require('./utils/keepAlive');
 
 const App = () => {
 	// Single page application switcher for each page in the application
