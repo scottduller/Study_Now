@@ -2,7 +2,7 @@
 
 Study now is a responsive mobile first web application suited towards students to help organise their studies at whatever level of education they are at. This application includes features such as a To-do list, a calendar, a Pomodoro Timer, a Flashcard system.
 
-The deployed final product can be found **[HERE](https://blooming-savannah-59517.herokuapp.com/)**
+The deployed final product can be found **[HERE](https://thawing-sands-04519.herokuapp.com/)**
 
 ## Getting Started
 
